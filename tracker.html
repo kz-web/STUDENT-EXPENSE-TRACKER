@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Student Expense Tracker</title>
+    <link rel="stylesheet" href="tracker.css">
+</head>
+<body>
+
+<div class="container">
+    <h1>Expense Tracker</h1>
+
+    <form id="expenseForm">
+        <input
+            type="text"
+            id="description"
+            placeholder="Description"
+            required>
+
+        <input
+            type="number"
+            id="amount"
+            placeholder="Amount"
+            required>
+
+        <select id="category">
+            <option>Food</option>
+            <option>Transport</option>
+            <option>Internet</option>
+            <option>Entertainment</option>
+            <option>Other</option>
+        </select>
+
+        <button type="submit">
+            Add Expense
+        </button>
+    </form>
+
+    <h2>Total: Ksh <span id="total">0</span></h2>
+
+    <ul id="expenseList"></ul>
+
+</div>
+
+<script src="tracker.js"></script>
+
+</body>
+</html>
